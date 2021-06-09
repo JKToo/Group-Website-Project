@@ -1,0 +1,187 @@
+		body{
+		animation: transitionIn 0.75s;
+		padding: 25px;
+		background-color: white;
+		color: black;
+		font-family:"Verdana";
+		}
+		a:unvisited{
+			color:gray;
+		}
+		a:visited{
+			color:gray;
+		}
+		
+		a:link{
+			color:gray;
+		}
+		.dark-mode{
+		  background-color: black;
+		  color: white;
+		}
+		
+		ul {
+		list-style-type: none;
+		margin: auto;
+		padding: -1;
+		overflow: hidden;
+		background-color: transparent;
+		font-family:"Verdana";
+		}
+
+		li {
+		  float: left;
+		}
+
+		#li2{
+			float:right;
+		}
+		
+		#li2 a:hover{
+			background-color: #95e6e2;
+		}
+		
+		li a {
+		  display: block;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none; 
+		}
+
+		li a:hover {
+		  background-color: #02afe6;
+		}
+		
+		.test{
+			float:left;
+		}
+		.test1{
+			width:100px;
+		}
+		
+		.switch {
+			float:right;
+		  position: relative;
+		  width: 60px;
+		  height: 34px;
+
+		}
+
+		.switch input { 
+		  opacity: 0;
+		  width: 0;
+		  height: 0;
+		}
+
+		.slider {
+		  position: absolute;
+		  cursor: pointer;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  background-color: #2196F3;
+		  -webkit-transition: .4s;
+		  transition: .4s;
+		}
+
+		.slider:before {
+		  position: absolute;
+		  content: url("../images/moon.png");
+		  height: 26px;
+		  width: 26px;
+		  left: 4px;
+		  bottom: 4px;
+		  background-color:white;
+		  transition: .4s;
+		}
+
+		input:checked + .slider {
+		  background-color: #ccc;
+		}
+
+		input:focus + .slider {
+		  box-shadow: 0 0 1px #ccc;
+		}
+
+		input:checked + .slider:before {
+		  -ms-transform: translateX(26px);
+		  transform: translateX(26px);
+		}
+
+		/* Rounded sliders */
+		.slider.round {
+		  border-radius: 34px;
+		}
+
+		.slider.round:before {
+		  border-radius: 50%;
+		}
+		
+		
+		
+@keyframes transitionIn{
+	from{
+		opacity: 0;
+		transform: translateX(100px);
+	}
+	
+	to{
+		opacity: 1;
+		transform: translateX(0);
+	}
+	
+	
+	/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+}
